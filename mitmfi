@@ -1,8 +1,8 @@
 apt-get install python2-dev python-setuptools libpcap0.8-dev libnetfilter-queue-dev libssl-dev libjpeg-dev libxml2-dev libxslt1-dev libcapstone4 libcapstone-dev -y
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
-python get-pip.py
+python2 get-pip.py
 pip install virtualenvwrapper
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
 source 'which virtualenvwrapper.sh'
 #mkvirtualenv MITMf -p /usr/bin/python2.7
 cd .. && rm -rf MITMf && git clone https://github.com/byt3bl33d3r/MITMf
